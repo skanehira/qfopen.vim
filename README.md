@@ -20,10 +20,10 @@ Provides way that open file on quickfix and location list.
 ```vim
 augroup qfopen-bufenter
   function! s:qfopen_keymap() abort
-    map <buffer> a <Plug>(qfopen-action)
-    map <buffer> <C-v> <Plug>(qfopen-open-vsplit)
-    map <buffer> <C-x> <Plug>(qfopen-open-split)
-    map <buffer> <C-t> <Plug>(qfopen-open-tab)
+    nmap <buffer> a <Plug>(qfopen-action)
+    nmap <buffer> <C-v> <Plug>(qfopen-open-vsplit)
+    nmap <buffer> <C-x> <Plug>(qfopen-open-split)
+    nmap <buffer> <C-t> <Plug>(qfopen-open-tab)
   endfunction
   au!
   au FileType qf call s:qfopen_keymap()
